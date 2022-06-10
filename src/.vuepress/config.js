@@ -7,7 +7,7 @@ module.exports = {
   title: 'Descartes v1.0.0',
 
   dest: 'docs',
-  base: 'descartes',
+  base: '/descartes/',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
