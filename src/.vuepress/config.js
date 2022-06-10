@@ -5,6 +5,9 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
   title: 'Descartes v1.0.0',
+
+  dest: 'docs',
+  base: 'descartes',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -56,6 +59,15 @@ module.exports = {
             '03-Element',
             '04-Element',
             '05-Element',
+            '06-Element',
+            '08-Element',
+            '09-Element',
+            '10-Element',
+            '11-Element',
+            '12-Element',
+            '13-Element',
+            '14-Element',
+            '15-Element',
           ]
         }
       ],

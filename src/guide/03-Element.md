@@ -461,7 +461,7 @@ las variables donde se van a cargar los valores que se infieren.
 Luego, al generar la definición, por cada dependencia el diseñador crea una subrutina para
 cargar los valores dependientes en función 
 
-```GeneXus
+``` genexus
 Sub 'GU: Dep -> País (Load)' //$ ...
     // PARA HACER: Verifique que el código cargue el/los valor/es dependiente/s 
     // OBS: En caso de que la carga NO haya sido exitosa el valor de la variable
