@@ -47,16 +47,16 @@ título, se debe indicar la clase en el atributo class. Este atributo permite da
 adicional al generador de cuál será el uso de la interfaz. Por el momento sólo se soportan
 dos valores aquí:
 
-::: tip valor 
-* Prompt: Se utiliza cuando la página Web se va a utilizar como lista de selección. Por
+::: tip *
+Prompt: Se utiliza cuando la página Web se va a utilizar como lista de selección. Por
 ejemplo, si se tiene un campo donde se pide un código de un país, se podría asociar
 una página de tipo prompt que permita desplegar la lista de países. En este caso, la
 página se debería mostrar por encima de la anterior y por eso debe tener asociada la
 clase prompt.
 :::
 
-::: tip valor 
-* Other: Representa una clase genérica que se debe utilizar para todas aquellas
+::: tip *
+Other: Representa una clase genérica que se debe utilizar para todas aquellas
 páginas Web que no son prompt.
 :::
 

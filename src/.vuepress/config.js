@@ -4,6 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
+  theme: 'yuu',
   title: 'Descartes v1.0.0',
 
   dest: 'docs',
@@ -22,6 +23,12 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
+    ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "https://bantotalcampus.dlya.com.uy/moodle/pluginfile.php/1/theme_adaptable/favicon/1652965632/Icon205x205pxB.jpg"}],
+    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "https://bantotalcampus.dlya.com.uy/moodle/pluginfile.php/1/theme_adaptable/favicon/1652965632/Icon205x205pxB.jpg"}],
+    ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "https://bantotalcampus.dlya.com.uy/moodle/pluginfile.php/1/theme_adaptable/favicon/1652965632/Icon205x205pxB.jpg"}],
+   
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
@@ -32,7 +39,11 @@ module.exports = {
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
+
+
+
   themeConfig: {
+  
     repo: '',
     editLinks: false,
     docsDir: '',
@@ -44,8 +55,8 @@ module.exports = {
         link: '/guide/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Install',
+        link: 'https://bantotalcampus.dlya.com.uy/moodle/enrol/index.php?id=119'
       },
     ],
     sidebar: {
@@ -80,5 +91,10 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true
+      }
   ]
 }

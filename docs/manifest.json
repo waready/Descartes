@@ -1,0 +1,36 @@
+{
+    "short_name": "Descartes",
+    "name": "Documentacion Descartes",
+    "start_url":"/index.html",
+    "background_color": "#3498db",
+    "display": "standalone",
+    "theme_color":"#3498db",
+    "orientation": "portrait",
+    "icons": [
+      {
+          "src": "https://bantotalcampus.dlya.com.uy/moodle/pluginfile.php/1/theme_adaptable/favicon/1652965632/Icon205x205pxB.jpg",
+          "type": "image/png",
+          "sizes": "72x72"
+      },
+      {
+          "src": "https://bantotalcampus.dlya.com.uy/moodle/pluginfile.php/1/theme_adaptable/favicon/1652965632/Icon205x205pxB.jpg",
+          "type": "image/png",
+          "sizes": "96x96"
+      },
+      {
+          "src": "https://bantotalcampus.dlya.com.uy/moodle/pluginfile.php/1/theme_adaptable/favicon/1652965632/Icon205x205pxB.jpg",
+          "type": "image/png",
+          "sizes": "128x128"
+      },
+      {
+          "src": "https://bantotalcampus.dlya.com.uy/moodle/pluginfile.php/1/theme_adaptable/favicon/1652965632/Icon205x205pxB.jpg",
+          "type": "image/png",
+          "sizes": "144x144"
+      },
+      {
+          "src": "https://bantotalcampus.dlya.com.uy/moodle/pluginfile.php/1/theme_adaptable/favicon/1652965632/Icon205x205pxB.jpg",
+          "type": "image/png",
+          "sizes": "152x152"
+      }
+    ]
+  }

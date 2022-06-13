@@ -1,15 +1,12 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
+heroImage: https://images.squarespace-cdn.com/content/v1/5349c113e4b01879301fb39a/1445376126348-0DQK15H60MW4XR110AU7/image-asset.png?format=300w
 tagline: 
-actionText: Quick Start →
+actionText: Comenzar →
 actionLink: /guide/
+
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
-footer: Made by waready with ❤️
+
+footer: Made by Bantotal 🏦
 ---
+<img :src="$withBase('/img/100.png')" class="center">

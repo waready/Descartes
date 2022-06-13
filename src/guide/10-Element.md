@@ -72,8 +72,29 @@ Web. A continuación se muestra una tabla que indica que elementos soportan el u
 elemento enabled y visible:
 
 
-<img :src="$withBase('/img/22.png')" class="center">
+<!-- <img :src="$withBase('/img/22.png')" class="center"> -->
 
+<!-- | Elemento          | Enabled           | Visible   |
+| ----------------  |:-----------------:| ---------:|
+| text              | No soportado      | Soportado |
+| field             | Soportado         | Soportado |
+| check-box         | Soportado         | Soportado |
+| value-list        | Soportado         | Soportado |
+| dynamic-value-list| Soportado         | Soportado |
+| dependency        | Soportado         | Soportado |
+| grid              | No soportado      | Soportado |
+| field-column      | Soportado         | Soportado |
+| check-box-column  | Soportado         | Soportado |
+| value-list-column | Soportado         | Soportado |
+| dynamic-value-list-column        | Soportado         | Soportado |
+| image-column      | No Soportado      | Soportado |
+| prompt-column     | Soportado         | Soportado |
+| operation         | Soportado         | Soportado |
+| popup-operation   | Soportado         | Soportado |
+| category          | No Soportado      | Soportado |
+| sub-category      | No Soportado      | Soportado | -->
+
+<OtherComponent/>
 
 Para las columnas de las grillas también se brinda el elemento row-enabled, el cual permite
 definir condiciones que se evalúan por cada fila. Al utilizar el elemento enabled en una
