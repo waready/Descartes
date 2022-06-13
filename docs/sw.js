@@ -8,20 +8,20 @@ const Inmutalbe_cache = 'inmutable-v1';
 const APP_SHELL = [
    // '/',
     'index.html',
-    'img/icons/152x152.png',  
-    'img/icons/144x144.png',   
-    'img/favicon.ico',
-    'js/app.js',
+    //'img/icons/152x152.png',  
+    //'img/icons/144x144.png',   
+    //'img/favicon.ico',
+    //'js/app.js',
     'js/sw-utils.js'
 ];
 
 const APP_SHELL_INMUTABLE = [
-    'https://code.jquery.com/jquery-3.2.1.slim.min.js',
-    "css/bootstrap.min.css",
-    "css/sweetalert.css",
-    "js/sweetalert.min.js",
-    "js/TweenMax.min.js",
-    "js/Winwheel.min.js"
+    //'https://code.jquery.com/jquery-3.2.1.slim.min.js',
+    //"css/bootstrap.min.css",
+    //"css/sweetalert.css",
+    //"js/sweetalert.min.js",
+    //"js/TweenMax.min.js",
+    //"js/Winwheel.min.js"
 ];
 
 self.addEventListener('install', e =>{
