@@ -1,5 +1,5 @@
 # Anexo B -Definir Repositorio con HFRConfFilRep
-
+[[toc]]
 <img :src="$withBase('/img/24.png')" class="center">
 
 En mi ejemplo se llama contrato y está en la carpeta raíz del directorio virtual donde se

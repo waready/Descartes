@@ -1,8 +1,6 @@
 # Introducción
+[[toc]]
 
-<!-- - VuePress - <Badge type="tip" text="v2" vertical="top" />
-- VuePress - <Badge type="warning" text="v2" vertical="middle" />
-- VuePress - <Badge type="danger" text="v2" vertical="bottom" /> -->
 
 <!-- VuePress is composed of two parts: a [minimalistic static site generator](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/core) with a Vue-powered [theming system](https://v1.vuepress.vuejs.org/theme/) and [Plugin API](https://v1.vuepress.vuejs.org/plugin/), and a [default theme](https://v1.vuepress.vuejs.org/theme/default-theme-config.html) optimized for writing technical documentation. It was created to support the documentation needs of Vue's own sub projects.
 
@@ -173,8 +171,8 @@ no hemos programado la lógica de las operaciones. Sin embargo, sirve como ejemp
 ver cómo luce el objeto generado y para entender mejor cómo funciona la herramienta 
 Descartes. Con este último fin vamos a analizar los elementos que fueron generados. 
 Cuando generamos un objeto con Descartes se define: 
-* El formulario Web: Consiste en el código HTML que define el aspecto visual del objeto. 
-* Eventos y Subrutinas: Comprenden eventos y subrutinas que se crean para resolver 
+* **El formulario Web**: Consiste en el código HTML que define el aspecto visual del objeto. 
+* **Eventos y Subrutinas**: Comprenden eventos y subrutinas que se crean para resolver 
 parte de la lógica de la interfaz (por ejemplo, validación de campos nulos). Las 
 subrutinas generadas también incluyen modelos de subrutinas para que 
 implementemos. Por ejemplo, por cada operación se genera una subrutina para que 
@@ -183,7 +181,7 @@ veremos más adelante, el generador sugiere el código que debemos escribir y lu
 podremos hacerle modificaciones. Sin embargo, no se pueden modificar todas las 
 subrutinas generadas, sólo se pueden modificar las que tienen prefijo “GU” porque 
 si no al volver a generar se perderán los cambios. 
-* Variables: Dentro de los elementos generados también se incluyen variables que 
+* **Variables**: Dentro de los elementos generados también se incluyen variables que 
 utiliza el diseñador de forma interna, y otras que sirven como interfaz entre lo que es 
 generado y lo que tenemos que programar nosotros. Por ejemplo, al utilizar una grilla 
 para desplegar una lista de datos el diseñador nos carga una variable con la cantidad 
@@ -199,7 +197,7 @@ podemos modificar y otras que no. Existen varios tipos de alcances en eventos, s
 variables; al crear dichos elementos el diseñador les asocia un alcance según el uso que le 
 dé, y esto nos determina si podemos modificarlo o no y cómo tenemos que utilizarlo. A 
 continuación se muestra una lista de los alcances y una guía de cómo reconocerlos: 
-* Usuario: Este alcance se presenta únicamente en subrutinas, y agrupa a las 
+* **Usuario**: Este alcance se presenta únicamente en subrutinas, y agrupa a las 
 subrutinas que crea el diseñador pero que quedan a cargo del programador 
 mantenerlas. Un ejemplo de estas subrutinas son las que se generan por operación. 
 El diseñador por cada operación crea una subrutina pero luego debemos escribir en 
@@ -208,7 +206,7 @@ de las subrutinas de usuario están a cargo de nosotros, por lo tanto, si volvem
 generar la definición no se modificará el código de las subrutinas de usuario que ya 
 estén creadas. Las subrutina de usuario se pueden reconocer porque tienen prefijo 
 “GU” (Generated - User), por ejemplo, “GU: Op -> Confirmar (Click)”. 
-* Publico: El alcance público se aplica a subrutinas y variables. Los elementos con este 
+* **Publico**: El alcance público se aplica a subrutinas y variables. Los elementos con este 
 alcance representan los elementos que crea el diseñador para que utilicemos pero 
 que el diseñador se encarga de mantenerlo. Si bien podemos hacer referencia a estos 
 elementos (ya sea porque invocamos a una subrutina, o consultamos el valor de una 
@@ -216,7 +214,7 @@ variable pública) no podemos modificarlos. Si volvemos a generar se descartan l
 cambios hechos y el generador vuelve a escribir el código de estos elementos. Las 
 variables y subrutinas publicas tienen el prefijo “GP” (Generated - Public), por 
 ejemplo, variable GP_Mensaje y subrutina “GP: Reportar mensaje”. 
-* Interno: Este alcance comprende los eventos, subrutinas y variables que crea el 
+* **Interno**: Este alcance comprende los eventos, subrutinas y variables que crea el 
 diseñador para utilizar de forma interna. Los elementos que son creados con este 
 alance no los podemos modificar, ni tampoco podemos hacer referencia a ellos 
 porque podrían desaparecer en futuras versiones del diseñador, ya que se asume
@@ -245,37 +243,37 @@ El resto de este manual se encuentra organizado por secciones que describen las
 funcionalidades del diseñador. Se recomienda hacer una lectura general de todas las 
 secciones para conocer que ofrece el diseñador, y luego utilizar este manual como referencia 
 para resolver cada caso concreto que se presente. Las secciones son: 
-* Elemento web-ui: Dentro del elemento web-ui se encuentran varios atributos 
+* **Elemento web-ui**: Dentro del elemento web-ui se encuentran varios atributos 
 generales de las interfaces Web. En esta sección se describen estos atributos y se 
 explica cómo debe definirse el elemento web-ui según el caso. 
-* Componentes básicos de un formulario: Aquí se describen los elementos que ofrece 
+* **Componentes básicos de un formulario**: Aquí se describen los elementos que ofrece 
 el diseñador para armar un formulario. A partir de estos elementos se define el 
 ingreso y la visualización de datos. 
-* Operaciones: Describe los atributos de las operaciones y analiza cómo deben 
+* **Operaciones**: Describe los atributos de las operaciones y analiza cómo deben 
 utilizarse según el caso. 
-* Grillas: Las grillas permiten mostrar una tabla con datos. El diseñador ofrece una 
+* **Grillas**: Las grillas permiten mostrar una tabla con datos. El diseñador ofrece una 
 serie de elementos que permiten resolver varias situaciones comunes, como filtros, 
 paginado y edición de valores. En esta sección se hace una exploración de todas las 
 funcionalidades y se muestra cómo utilizarlas. 
-* Datos ocultos: Debido a la naturaleza sin estado de la arquitectura Web, para no 
+* **Datos ocultos**: Debido a la naturaleza sin estado de la arquitectura Web, para no 
 perder los valores de las variables es necesario almacenarlos en algún lado. Una 
 forma de hacer esto es a través de datos ocultos. Esta sección explica como 
 definirlos. 
-* Categorías y subcategorías: Para diseñar páginas con muchos datos el diseñador 
+* **Categorías y subcategorías**: Para diseñar páginas con muchos datos el diseñador 
 ofrece la posibilidad de organizarlos en categorías y subcategorías, aquí se explorará 
 este tema. 
-* Navegación: En una aplicación Web se le llama navegación a la proceso de ir de una 
+* **Navegación**: En una aplicación Web se le llama navegación a la proceso de ir de una 
 página a otra. Dentro de esta sección se examinan los mecanismos que ofrece el 
 diseñador para navegar entre páginas. 
-* Reporte de errores/advertencias: Explica cómo se deben reportar errores y 
+* **Reporte de errores/advertencias**: Explica cómo se deben reportar errores y 
 advertencias. 
-* Propiedades dinámicas: Varios elementos de la interfaz tienen propiedades que 
+* **Propiedades dinámicas**: Varios elementos de la interfaz tienen propiedades que 
 pueden cambiar de valor según el estado de la página. El diseñador permite definir 
 los valores de estas propiedades en función de expresiones, por ejemplo, podemos 
 definir que el campo 
 “Código” está habilitado según el valor de la variable Mode. En esta sección se explica 
 cómo funciona este mecanismo y cuales son las propiedades dinámicas. 
-* Validaciones: El diseñador ofrece también algunos atributos que permiten hacer 
+* **Validaciones**: El diseñador ofrece también algunos atributos que permiten hacer 
 validaciones de datos automáticas. Esta sección explora cómo utilizar estas 
 funcionalidades para escribir menos código de validación. 
 

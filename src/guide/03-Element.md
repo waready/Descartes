@@ -1,5 +1,6 @@
 # Componentes Básicos de un Formulario
 
+
 ## Elemento Form
 
 Dijimos que el elemento principal de una página Web era el elemento web-ui, dentro de este
@@ -13,21 +14,21 @@ este indicamos los elementos que se van a mostrar al visualizar la página Web.
 
 Los elementos que brinda el diseñador para definir un formulario son:
 
-* Text: Contiene un texto fijo que se muestra en la página.
+* **Text**: Contiene un texto fijo que se muestra en la página.
 
-* Field: Representa una caja de texto para ingresar un valor.
+* **Field**: Representa una caja de texto para ingresar un valor.
 
-* Check-Box: Define una casilla de verificación, donde el usuario puede marcar o desmarcar una opción.
+* **Check-Box**: Define una casilla de verificación, donde el usuario puede marcar o desmarcar una opción.
 
-* Value-List: Permite seleccionar un valor de una lista de valores. Este elemento se puede mostrar como un cuadro de selección (un ComboBox) o botones de radio (RadioButtons).
+* **Value-List**: Permite seleccionar un valor de una lista de valores. Este elemento se puede mostrar como un cuadro de selección (un ComboBox) o botones de radio (RadioButtons).
 
-* Dynamic-Value-List: También representa una lista de valores. La diferencia con el elemento anterior es que aquí los valores se cargan de la base de datos y en el elemento value-list se deben cargar manualmente. Para determinar los valores que se muestran en este elemento se debe especificar un par de atributos de una tabla y una condición que filtra los registros que se cargan.
+* **Dynamic-Value-List**: También representa una lista de valores. La diferencia con el elemento anterior es que aquí los valores se cargan de la base de datos y en el elemento value-list se deben cargar manualmente. Para determinar los valores que se muestran en este elemento se debe especificar un par de atributos de una tabla y una condición que filtra los registros que se cargan.
 
-* Dependency: Representa una relación de dependencia del tipo código-nombre. Este elemento se muestra como uno (o mas) campo/s donde se ingresa un código, y luego se carga a la derecha el concepto asociado al código. Adicionalmente, este elemento permite asociar un prompt. Cuando la dependencia tiene definido un prompt se muestra un botón con el cual el usuario puede abrir una nueva ventana con los valores posibles y seleccionar uno de esta lista.
+* **Dependency**: Representa una relación de dependencia del tipo código-nombre. Este elemento se muestra como uno (o mas) campo/s donde se ingresa un código, y luego se carga a la derecha el concepto asociado al código. Adicionalmente, este elemento permite asociar un prompt. Cuando la dependencia tiene definido un prompt se muestra un botón con el cual el usuario puede abrir una nueva ventana con los valores posibles y seleccionar uno de esta lista.
 
-* Grid: Permiten trabajar con listas de registros. Las grillas son lo que antes se conocían como subfiles en GeneXus, y a partir de la versión 8.0 se denominan también grillas. Este elemento puede ser utilizado tanto para mostrar datos como para ingresar datos en forma de tabla.
+* **Grid**: Permiten trabajar con listas de registros. Las grillas son lo que antes se conocían como subfiles en GeneXus, y a partir de la versión 8.0 se denominan también grillas. Este elemento puede ser utilizado tanto para mostrar datos como para ingresar datos en forma de tabla.
 
-* Lline-break: Marca el fin de una línea, los elementos que estén luego de un line-break se ubicarán en la siguiente línea. Los elementos en el formulario se van ordenando de izquierda a derecha en la misma línea, se debe poner un line-break para marcar cuando termina una línea.
+* **Lline-break**: Marca el fin de una línea, los elementos que estén luego de un line-break se ubicarán en la siguiente línea. Los elementos en el formulario se van ordenando de izquierda a derecha en la misma línea, se debe poner un line-break para marcar cuando termina una línea.
 
 En la sección 7.0 Categorías y subcategorías se describirá cómo se pueden agrupar los campos de una página Web en categorías y subcategorías. Aunque por ahora dejaremos las categorías y subcategorías de lado y profundizaremos primero en cada uno de los elementos mencionados.
 
@@ -184,18 +185,22 @@ valores posibles para que seleccione uno.
 Con el atributo style (dentro del elemento check-box) se puede definir cómo se despliegan
 los valores al usuario. Los estilos soportados son:
 
-* ComboBox: Este es el estilo por defecto, y muestra los valores utilizando un cuadro
+::: tip ComboBox 
+Este es el estilo por defecto, y muestra los valores utilizando un cuadro
 de selección con una flecha a la derecha, cuando el usuario presiona la flecha se
 despliegan todos los valores posibles. La ventaja de este estilo es que ocupa poco
 espacio en el formulario, pero tiene como desventaja que para ver todos los valores
 es necesario presionar la flecha.
+:::
 
-* RadioButton: Con este estilo se listan verticalmente todos los valores con un botón
+::: tip RadioButton 
+Con este estilo se listan verticalmente todos los valores con un botón
 de radio a la izquierda. Al presionar en uno de los botones de radio se selecciona el
 valor y se deselecciona el anterior. Este mecanismo brinda como ventaja que se
 despliegan todos los valores en el formulario. Sin embargo, si hay muchos valores la
 lista de valores podría ser muy grande. Este estilo puede ser apropiado cuando hay
 únicamente 2 o 3 valores posibles. 
+::: 
 
 ### Prefijos y Sufijos 
 El mecanismo es igual al que se comentó en el elemento field. Ver sección 3.3.2 Prefijos y

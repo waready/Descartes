@@ -1,5 +1,6 @@
 # Operaciones
 
+[[toc]]
 ## Conceptos Básicos
 
 Las páginas Web por lo general se componen de un formulario y botones para realizar

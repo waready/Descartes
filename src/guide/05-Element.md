@@ -473,9 +473,9 @@ pueda marcar más de una fila.
 
 Los valores posibles del atributo selection son:
 
-* None: La operación no requiere selección.
-* Single: La operación requiere que haya una fila seleccionada. Si se intenta invocar la operación y no hay selección se muestra un error.
-* Multiple: La operación permite selección múltiple. Se puede chequear una o más fila,en caso que se invoque la operación y no haya al menos una fila chequeada se muestra también un error.
+* **None**: La operación no requiere selección.
+* **Single**: La operación requiere que haya una fila seleccionada. Si se intenta invocar la operación y no hay selección se muestra un error.
+* **Multiple**: La operación permite selección múltiple. Se puede chequear una o más fila,en caso que se invoque la operación y no haya al menos una fila chequeada se muestra también un error.
 
 En las operaciones de la grilla se manejan dos conceptos distintos para la selección: la fila
 seleccionada (que es sólo una) y las filas chequeadas (que pueden ser más de una). La fila
@@ -625,36 +625,36 @@ de filtrado.
 A continuación describiremos brevemente los elementos disponibles para definir filtros, y en
 las siguientes secciones mostraremos ejemplos de cómo se puede utilizar cada uno de ellos:
 
-* Column: Permite definir un filtro a partir de una columna con condición de mayor o
+* **Column**: Permite definir un filtro a partir de una columna con condición de mayor o
 igual, o directamente igual, dependiendo del tipo de control asociado como se verá a
 continuación en la sección 5.7.2 Elemento column. Al utilizar este tipo de filtro el
 diseñador infiere el tipo de control de la definición de la columna, crea una variable
 (con sufijo _Filtro) para el filtro y define la condición de filtrado.
 
-* Column-dependency: Este elemento permite definir un filtro que se comporta como
+* **Column-dependency**: Este elemento permite definir un filtro que se comporta como
 una dependencia y la condición se infiere automáticamente al igual que en el
 elemento column.
 
-* Field: Define un campo para filtrar. A diferencia del elemento column aquí se debe
+* **Field**: Define un campo para filtrar. A diferencia del elemento column aquí se debe
 especificar la variable en la que se captura el valor del filtro y permite indicar la
 condición de filtrado. En el resto de los elementos que se listan también hay que
 definir la condición manualmente.
 
-* Check-box: Permite utilizar una casilla de verificación para representar el filtro. Este
+* **Check-box**: Permite utilizar una casilla de verificación para representar el filtro. Este
 tipo de filtro generalmente se utiliza para definir si se debe cumplir o no una
 condición, por ejemplo, podríamos agregar una casilla de verificación para indicar
 que se deben mostrar sólo los clientes con deuda.
 
-* Value-list: Genera un control para que el usuario seleccione el valor del filtro. Por
+* **Value-list**: Genera un control para que el usuario seleccione el valor del filtro. Por
 ejemplo, se podría decidir filtrar los clientes por su nacionalidad y brindar una lista
 de valores que permita elegir entre “Nacional”, “Extranjero” o “Ambos”. 
 
-* Dynamic-value-list: Es similar al anterior, salvo que se indican una par de atributos de
+* **Dynamic-value-list**: Es similar al anterior, salvo que se indican una par de atributos de
 la base de datos y se genera automáticamente un For Each para cargar los valores.
 
-* Depedency: Define un filtro que se representa como una dependencia.
+* **Depedency**: Define un filtro que se representa como una dependencia.
 
-* Line-break: Marca el fin de una línea de filtros. En caso que se tengan muchos filtros
+* **Line-break**: Marca el fin de una línea de filtros. En caso que se tengan muchos filtros
 se puede utilizar este elemento para separarlos en más de una línea.
 
 Dentro de los filtros podemos distinguir dos tipos: los automáticos y los manuales. Los filtros
@@ -951,26 +951,26 @@ definir una grilla.
 
 Los elementos para definir columnas son:
 
-* Field-column: Este tipo de columna es el más habitual y se utiliza cuando se quiere
+* **Field-column**: Este tipo de columna es el más habitual y se utiliza cuando se quiere
 mostrar un texto con el valor de una variable o atributo. También se puede utilizar
 esta columna para situar una caja de texto en la cual se pueda ingresar un valor para
 cada celda de la columna.
 
-* Check-box-column: Presenta una casilla de verificación por cada fila.
+* **Check-box-column**: Presenta una casilla de verificación por cada fila.
 
-* Value-list-column: Asocia un control para seleccionar un valor en una lista de valores.
+* **Value-list-column**: Asocia un control para seleccionar un valor en una lista de valores.
 Este tipo de columna se utiliza cuando se va a utilizar la grilla para ingreso de datos
 y se desea presentar en cada celda de la columna una lista de valores para que el
 usuario seleccione uno.
 
-* Dynamic-value-list-column: Representa una lista de valores, en la cual sus valores se
+* **Dynamic-value-list-column**: Representa una lista de valores, en la cual sus valores se
 extraen de la base de datos.
 
-* Prompt-column: Al definir una columna con este elemento se dibuja un botón de
+* **Prompt-column**: Al definir una columna con este elemento se dibuja un botón de
 prompt por cada fila en el lugar de la columna. En este botón se puede asociar un
 WebPanel (de clase prompt) que se llame al presionarlo.
 
-* Image-column: Permite mostrar imágenes en las celdas de la columna
+* **Image-column**: Permite mostrar imágenes en las celdas de la columna
 
 A través de este elemento se despliega el valor de una variable o atributo (en formato de
 texto) dentro de una columna. La columna puede ser tanto de lectura como de escritura. En
@@ -1303,12 +1303,12 @@ diseñador genera una subrutina análoga con nombre “GU: Gr -> `<nombre de la 
 La grilla tiene una altura que determina la cantidad máxima de filas. La altura se define a
 través del atributo height (del elemento grid). Los valores soportados son: 
 
-* VerySmall: 3 filas.
-* Small: 6 filas.
-* Medium: 10 filas.
-* Large: 15 filas.
-* VeryLarge: 20 filas.
-* Custom: Se define la cantidad de filas en atributo customHeight. 
+* **VerySmall**: 3 filas.
+* **Small**: 6 filas.
+* **Medium**: 10 filas.
+* **Large**: 15 filas.
+* **VeryLarge**: 20 filas.
+* **Custom**: Se define la cantidad de filas en atributo customHeight. 
 
 En caso que no se defina este atributo se asume el valor medium. Al definir la altura de una
 grilla se puede utilizar el valor custom para definir el número exacto de filas, sin embargo no
@@ -1366,13 +1366,15 @@ readOnly:
 </grid> 
 
 ```
-* Ingreso de registros: El otro uso típico es para ingresar datos masivos. Supongamos
+::: tip Ingreso de registros
+El otro uso típico es para ingresar datos masivos. Supongamos
 el caso de un usuario que tiene que pasar una planilla extensa al sistema informático.
 Aquí puede resultar más apropiado definir una grilla con campos en blanco para que
 vaya llenando los datos como si fuera una planilla electrónica. El ingreso de esta
 forma es más rápido porque evitamos tener que abrir una página por cada registro
 que va a ingresar. Al llenar la grilla el usuario podría apretar un botón para agregar
 una nueva página en blanco y poder seguir ingresando datos.
+:::
 
 
 <img :src="$withBase('/img/16.png')" class="center">

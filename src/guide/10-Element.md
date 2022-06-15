@@ -1,4 +1,6 @@
 #  Propiedades Dinámicas
+
+[[toc]]
 ## Conceptos Básicos
 El modelo de propiedades dinámicas se utiliza para definir el valor de una propiedad en
 función de una expresión. Por ejemplo, podemos asociar la expresión “&Mode = „I‟” para

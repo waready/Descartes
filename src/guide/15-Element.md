@@ -1,5 +1,5 @@
 # Anexo C - Descartes 5.0 en versión Pionero BTV3.1
-
+[[toc]]
 En el uso de Descartes en Genexus 16 se fueron incorporando nuevas funcionalidades que
 afectarán la programación de algunos paneles. 
 

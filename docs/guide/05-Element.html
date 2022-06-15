@@ -14,7 +14,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     
-    <link rel="preload" href="/descartes/assets/css/0.styles.95da80b7.css" as="style"><link rel="preload" href="/descartes/assets/js/app.a1d0f67e.js" as="script"><link rel="preload" href="/descartes/assets/js/2.3caf594e.js" as="script"><link rel="preload" href="/descartes/assets/js/14.ee11b602.js" as="script"><link rel="prefetch" href="/descartes/assets/js/10.3b443881.js"><link rel="prefetch" href="/descartes/assets/js/11.5e6bc943.js"><link rel="prefetch" href="/descartes/assets/js/12.c033c4b3.js"><link rel="prefetch" href="/descartes/assets/js/13.fa37317e.js"><link rel="prefetch" href="/descartes/assets/js/15.753def7b.js"><link rel="prefetch" href="/descartes/assets/js/16.c505cbde.js"><link rel="prefetch" href="/descartes/assets/js/17.fdaa5612.js"><link rel="prefetch" href="/descartes/assets/js/18.b0697292.js"><link rel="prefetch" href="/descartes/assets/js/19.2d6de87a.js"><link rel="prefetch" href="/descartes/assets/js/20.b8e3f647.js"><link rel="prefetch" href="/descartes/assets/js/21.380de28e.js"><link rel="prefetch" href="/descartes/assets/js/22.80c7551a.js"><link rel="prefetch" href="/descartes/assets/js/23.a76ad5da.js"><link rel="prefetch" href="/descartes/assets/js/24.93cf2c4a.js"><link rel="prefetch" href="/descartes/assets/js/25.e03f87c6.js"><link rel="prefetch" href="/descartes/assets/js/26.fe6f18b8.js"><link rel="prefetch" href="/descartes/assets/js/27.24fe2ee5.js"><link rel="prefetch" href="/descartes/assets/js/3.f62f7ef4.js"><link rel="prefetch" href="/descartes/assets/js/4.fc84be22.js"><link rel="prefetch" href="/descartes/assets/js/5.73d708a8.js"><link rel="prefetch" href="/descartes/assets/js/6.5b084e7e.js"><link rel="prefetch" href="/descartes/assets/js/7.ccdebbf9.js"><link rel="prefetch" href="/descartes/assets/js/8.0c61a0e6.js"><link rel="prefetch" href="/descartes/assets/js/9.28eb8fe2.js">
+    <link rel="preload" href="/descartes/assets/css/0.styles.95da80b7.css" as="style"><link rel="preload" href="/descartes/assets/js/app.78657d3e.js" as="script"><link rel="preload" href="/descartes/assets/js/2.3caf594e.js" as="script"><link rel="preload" href="/descartes/assets/js/14.474a1391.js" as="script"><link rel="prefetch" href="/descartes/assets/js/10.3b443881.js"><link rel="prefetch" href="/descartes/assets/js/11.56bc37b4.js"><link rel="prefetch" href="/descartes/assets/js/12.318f0814.js"><link rel="prefetch" href="/descartes/assets/js/13.1b483b1a.js"><link rel="prefetch" href="/descartes/assets/js/15.56e20d02.js"><link rel="prefetch" href="/descartes/assets/js/16.c3571822.js"><link rel="prefetch" href="/descartes/assets/js/17.612c54bb.js"><link rel="prefetch" href="/descartes/assets/js/18.d4ebf68f.js"><link rel="prefetch" href="/descartes/assets/js/19.3316d78b.js"><link rel="prefetch" href="/descartes/assets/js/20.0c3cc74f.js"><link rel="prefetch" href="/descartes/assets/js/21.3fb37624.js"><link rel="prefetch" href="/descartes/assets/js/22.52c1512c.js"><link rel="prefetch" href="/descartes/assets/js/23.675500a0.js"><link rel="prefetch" href="/descartes/assets/js/24.bdb1e3f9.js"><link rel="prefetch" href="/descartes/assets/js/25.a81f2e4c.js"><link rel="prefetch" href="/descartes/assets/js/26.637ca286.js"><link rel="prefetch" href="/descartes/assets/js/27.24fe2ee5.js"><link rel="prefetch" href="/descartes/assets/js/3.f62f7ef4.js"><link rel="prefetch" href="/descartes/assets/js/4.fc84be22.js"><link rel="prefetch" href="/descartes/assets/js/5.73d708a8.js"><link rel="prefetch" href="/descartes/assets/js/6.5b084e7e.js"><link rel="prefetch" href="/descartes/assets/js/7.ccdebbf9.js"><link rel="prefetch" href="/descartes/assets/js/8.0c61a0e6.js"><link rel="prefetch" href="/descartes/assets/js/9.28eb8fe2.js">
     <link rel="stylesheet" href="/descartes/assets/css/0.styles.95da80b7.css">
   </head>
   <body>
@@ -330,7 +330,7 @@ y además genera los elementos gráficos necesarios para permitir la selección.
 si hay al menos una operación con selección simple brinda al usuario la posibilidad de
 seleccionar una fila al hacer clic sobre ella. En caso que haya al menos una operación con
 selección múltiple, se agrega una columna con casillas de verificación para que el usuario
-pueda marcar más de una fila.</p> <img src="/descartes/img/11.png" class="center"> <p>Los valores posibles del atributo selection son:</p> <ul><li>None: La operación no requiere selección.</li> <li>Single: La operación requiere que haya una fila seleccionada. Si se intenta invocar la operación y no hay selección se muestra un error.</li> <li>Multiple: La operación permite selección múltiple. Se puede chequear una o más fila,en caso que se invoque la operación y no haya al menos una fila chequeada se muestra también un error.</li></ul> <p>En las operaciones de la grilla se manejan dos conceptos distintos para la selección: la fila
+pueda marcar más de una fila.</p> <img src="/descartes/img/11.png" class="center"> <p>Los valores posibles del atributo selection son:</p> <ul><li><strong>None</strong>: La operación no requiere selección.</li> <li><strong>Single</strong>: La operación requiere que haya una fila seleccionada. Si se intenta invocar la operación y no hay selección se muestra un error.</li> <li><strong>Multiple</strong>: La operación permite selección múltiple. Se puede chequear una o más fila,en caso que se invoque la operación y no haya al menos una fila chequeada se muestra también un error.</li></ul> <p>En las operaciones de la grilla se manejan dos conceptos distintos para la selección: la fila
 seleccionada (que es sólo una) y las filas chequeadas (que pueden ser más de una). La fila
 seleccionada no necesariamente tiene que coincidir con la fila chequeada y viceversa. La
 diferencia de estos conceptos se puede observar visualmente. Las filas chequeadas son
@@ -425,22 +425,22 @@ vuelven a cargar los datos de la grilla, cargando únicamente los registros de l
 clientes en los cuales CliApe es mayor o igual al valor ingresado en el campo de filtrado (si
 no es nulo). Para quitar el filtro se puede dejar vacío el campo y volver a presionar el botón
 de filtrado.</p> <p>A continuación describiremos brevemente los elementos disponibles para definir filtros, y en
-las siguientes secciones mostraremos ejemplos de cómo se puede utilizar cada uno de ellos:</p> <ul><li><p>Column: Permite definir un filtro a partir de una columna con condición de mayor o
+las siguientes secciones mostraremos ejemplos de cómo se puede utilizar cada uno de ellos:</p> <ul><li><p><strong>Column</strong>: Permite definir un filtro a partir de una columna con condición de mayor o
 igual, o directamente igual, dependiendo del tipo de control asociado como se verá a
 continuación en la sección 5.7.2 Elemento column. Al utilizar este tipo de filtro el
 diseñador infiere el tipo de control de la definición de la columna, crea una variable
-(con sufijo _Filtro) para el filtro y define la condición de filtrado.</p></li> <li><p>Column-dependency: Este elemento permite definir un filtro que se comporta como
+(con sufijo _Filtro) para el filtro y define la condición de filtrado.</p></li> <li><p><strong>Column-dependency</strong>: Este elemento permite definir un filtro que se comporta como
 una dependencia y la condición se infiere automáticamente al igual que en el
-elemento column.</p></li> <li><p>Field: Define un campo para filtrar. A diferencia del elemento column aquí se debe
+elemento column.</p></li> <li><p><strong>Field</strong>: Define un campo para filtrar. A diferencia del elemento column aquí se debe
 especificar la variable en la que se captura el valor del filtro y permite indicar la
 condición de filtrado. En el resto de los elementos que se listan también hay que
-definir la condición manualmente.</p></li> <li><p>Check-box: Permite utilizar una casilla de verificación para representar el filtro. Este
+definir la condición manualmente.</p></li> <li><p><strong>Check-box</strong>: Permite utilizar una casilla de verificación para representar el filtro. Este
 tipo de filtro generalmente se utiliza para definir si se debe cumplir o no una
 condición, por ejemplo, podríamos agregar una casilla de verificación para indicar
-que se deben mostrar sólo los clientes con deuda.</p></li> <li><p>Value-list: Genera un control para que el usuario seleccione el valor del filtro. Por
+que se deben mostrar sólo los clientes con deuda.</p></li> <li><p><strong>Value-list</strong>: Genera un control para que el usuario seleccione el valor del filtro. Por
 ejemplo, se podría decidir filtrar los clientes por su nacionalidad y brindar una lista
-de valores que permita elegir entre “Nacional”, “Extranjero” o “Ambos”.</p></li> <li><p>Dynamic-value-list: Es similar al anterior, salvo que se indican una par de atributos de
-la base de datos y se genera automáticamente un For Each para cargar los valores.</p></li> <li><p>Depedency: Define un filtro que se representa como una dependencia.</p></li> <li><p>Line-break: Marca el fin de una línea de filtros. En caso que se tengan muchos filtros
+de valores que permita elegir entre “Nacional”, “Extranjero” o “Ambos”.</p></li> <li><p><strong>Dynamic-value-list</strong>: Es similar al anterior, salvo que se indican una par de atributos de
+la base de datos y se genera automáticamente un For Each para cargar los valores.</p></li> <li><p><strong>Depedency</strong>: Define un filtro que se representa como una dependencia.</p></li> <li><p><strong>Line-break</strong>: Marca el fin de una línea de filtros. En caso que se tengan muchos filtros
 se puede utilizar este elemento para separarlos en más de una línea.</p></li></ul> <p>Dentro de los filtros podemos distinguir dos tipos: los automáticos y los manuales. Los filtros
 automáticos son column y column-dependency, para estos filtros se genera
 automáticamente una condición de mayor o igual (o dircetamente igual, dependiendo del
@@ -626,16 +626,16 @@ conditions se aplicará siempre la condición. Por lo tanto, se recomienda utili
 filter-condition para definir condiciones de filtrado parametrizables por el usuario.</p> <h2 id="tipos-de-columnas"><a href="#tipos-de-columnas" class="header-anchor">#</a> Tipos de Columnas</h2> <h3 id="conceptos-basicos-4"><a href="#conceptos-basicos-4" class="header-anchor">#</a> Conceptos Básicos</h3> <p>Las columnas de la grilla se definen dentro del elemento columns (en el elemento grid). Hasta
 ahora sólo se hizo mención al elemento field-column, como forma de representar una
 columna en la grilla, sin embargo existen otros tipos de columnas que pueden utilizarse al
-definir una grilla.</p> <p>Los elementos para definir columnas son:</p> <ul><li><p>Field-column: Este tipo de columna es el más habitual y se utiliza cuando se quiere
+definir una grilla.</p> <p>Los elementos para definir columnas son:</p> <ul><li><p><strong>Field-column</strong>: Este tipo de columna es el más habitual y se utiliza cuando se quiere
 mostrar un texto con el valor de una variable o atributo. También se puede utilizar
 esta columna para situar una caja de texto en la cual se pueda ingresar un valor para
-cada celda de la columna.</p></li> <li><p>Check-box-column: Presenta una casilla de verificación por cada fila.</p></li> <li><p>Value-list-column: Asocia un control para seleccionar un valor en una lista de valores.
+cada celda de la columna.</p></li> <li><p><strong>Check-box-column</strong>: Presenta una casilla de verificación por cada fila.</p></li> <li><p><strong>Value-list-column</strong>: Asocia un control para seleccionar un valor en una lista de valores.
 Este tipo de columna se utiliza cuando se va a utilizar la grilla para ingreso de datos
 y se desea presentar en cada celda de la columna una lista de valores para que el
-usuario seleccione uno.</p></li> <li><p>Dynamic-value-list-column: Representa una lista de valores, en la cual sus valores se
-extraen de la base de datos.</p></li> <li><p>Prompt-column: Al definir una columna con este elemento se dibuja un botón de
+usuario seleccione uno.</p></li> <li><p><strong>Dynamic-value-list-column</strong>: Representa una lista de valores, en la cual sus valores se
+extraen de la base de datos.</p></li> <li><p><strong>Prompt-column</strong>: Al definir una columna con este elemento se dibuja un botón de
 prompt por cada fila en el lugar de la columna. En este botón se puede asociar un
-WebPanel (de clase prompt) que se llame al presionarlo.</p></li> <li><p>Image-column: Permite mostrar imágenes en las celdas de la columna</p></li></ul> <p>A través de este elemento se despliega el valor de una variable o atributo (en formato de
+WebPanel (de clase prompt) que se llame al presionarlo.</p></li> <li><p><strong>Image-column</strong>: Permite mostrar imágenes en las celdas de la columna</p></li></ul> <p>A través de este elemento se despliega el valor de una variable o atributo (en formato de
 texto) dentro de una columna. La columna puede ser tanto de lectura como de escritura. En
 este último caso se mostrará una caja de texto para ingresar la variable. En definitiva, este
 tipo de columnas se utiliza para mostrar un texto con el valor de la variable o atributo
@@ -834,7 +834,7 @@ un ejemplo de la definición de títulos condicionales y más información sobre
 los registros de las mismas. Al asignar true al atributo generateRefresh (del elemento grid) el
 diseñador genera una subrutina análoga con nombre “GU: Gr -&gt; <code>&lt;nombre de la grilla&gt;</code>
 (Refresh)”. Esta subrutina se invoca siempre que es necesario volver a cargar una grilla.</p> <h3 id="altura-de-una-grilla"><a href="#altura-de-una-grilla" class="header-anchor">#</a> Altura de una Grilla</h3> <p>La grilla tiene una altura que determina la cantidad máxima de filas. La altura se define a
-través del atributo height (del elemento grid). Los valores soportados son:</p> <ul><li>VerySmall: 3 filas.</li> <li>Small: 6 filas.</li> <li>Medium: 10 filas.</li> <li>Large: 15 filas.</li> <li>VeryLarge: 20 filas.</li> <li>Custom: Se define la cantidad de filas en atributo customHeight.</li></ul> <p>En caso que no se defina este atributo se asume el valor medium. Al definir la altura de una
+través del atributo height (del elemento grid). Los valores soportados son:</p> <ul><li><strong>VerySmall</strong>: 3 filas.</li> <li><strong>Small</strong>: 6 filas.</li> <li><strong>Medium</strong>: 10 filas.</li> <li><strong>Large</strong>: 15 filas.</li> <li><strong>VeryLarge</strong>: 20 filas.</li> <li><strong>Custom</strong>: Se define la cantidad de filas en atributo customHeight.</li></ul> <p>En caso que no se defina este atributo se asume el valor medium. Al definir la altura de una
 grilla se puede utilizar el valor custom para definir el número exacto de filas, sin embargo no
 se recomienda su uso para evitar que las grillas de diferentes páginas Web (creadas por
 desarrolladores distintos) tengan alturas muy desiguales. Por este motivo se encuentran
@@ -869,13 +869,13 @@ readOnly:</p> <div class="language-xml line-numbers-mode"><pre class="language-x
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>operations</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>grid</span><span class="token punctuation">&gt;</span></span> 
 
-</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><ul><li>Ingreso de registros: El otro uso típico es para ingresar datos masivos. Supongamos
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">Ingreso de registros</p> <p>El otro uso típico es para ingresar datos masivos. Supongamos
 el caso de un usuario que tiene que pasar una planilla extensa al sistema informático.
 Aquí puede resultar más apropiado definir una grilla con campos en blanco para que
 vaya llenando los datos como si fuera una planilla electrónica. El ingreso de esta
 forma es más rápido porque evitamos tener que abrir una página por cada registro
 que va a ingresar. Al llenar la grilla el usuario podría apretar un botón para agregar
-una nueva página en blanco y poder seguir ingresando datos.</li></ul> <img src="/descartes/img/16.png" class="center"> <p>En el siguiente ejemplo se muestra como se podría definir la grilla que está en la figura. El
+una nueva página en blanco y poder seguir ingresando datos.</p></div> <img src="/descartes/img/16.png" class="center"> <p>En el siguiente ejemplo se muestra como se podría definir la grilla que está en la figura. El
 aspecto más relevante es el atributo editable dentro del elemento grid. Con este atributo se
 le puede dar la posibilidad al usuario de completar las filas vacías (valor completePage) o
 incluso de permitirle también agregar nuevas páginas (valor enableAddPage).</p> <div class="language-xml line-numbers-mode"><pre class="language-xml"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>grid</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>grdMonedas<span class="token punctuation">&quot;</span></span> <span class="token attr-name">editable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>enableAddPage<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
@@ -999,6 +999,6 @@ EndFor
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/descartes/assets/js/app.a1d0f67e.js" defer></script><script src="/descartes/assets/js/2.3caf594e.js" defer></script><script src="/descartes/assets/js/14.ee11b602.js" defer></script>
+    <script src="/descartes/assets/js/app.78657d3e.js" defer></script><script src="/descartes/assets/js/2.3caf594e.js" defer></script><script src="/descartes/assets/js/14.474a1391.js" defer></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 # Elemento WEB-UI
-
+[[toc]]
 ## Conceptos Básicos
 
 Como se observó en el ejemplo inicial la interfaz se define dentro del elemento web-ui. Vamos a volver a presentar el mismo ejemplo para recordarlo:

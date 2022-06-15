@@ -1,5 +1,7 @@
 # Datos Ocultos 
 
+[[toc]]
+
 El modelo Web presenta una arquitectura sin estado. Este modelo brinda un esquema
 orientado a mensajes, donde hay un cliente que envía mensajes a un servidor cada vez que
 necesita efectuar alguna acción, el servidor los procesa y le envía otro mensaje al cliente

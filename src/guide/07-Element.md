@@ -1,5 +1,5 @@
 # Categorías y Subcategorías
-
+[[toc]]
 ## Conceptos Básicos 
 
 Con el fin de poder organizar mejor la información en páginas con mucho contenido de datos

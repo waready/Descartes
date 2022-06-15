@@ -1,5 +1,5 @@
 # Validaciones
-
+[[toc]]
 ## Conceptos Básicos 
 
 Dentro del diseñador se ofrecen una serie de atributos para hacer validaciones sobre la

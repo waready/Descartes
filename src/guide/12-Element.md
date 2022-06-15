@@ -1,4 +1,5 @@
 # Agregados en la Nueva Versión de Descartes
+[[toc]]
 ## Pantallas Anchas 
 
 El ancho de las pantallas normales (no de los prompts) se puede modificar con el atributo

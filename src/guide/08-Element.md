@@ -1,4 +1,5 @@
 # Navegación 
+[[toc]]
 
 ## Conceptos Básicos 
 
@@ -36,7 +37,9 @@ generateCall (del elemento web-ui).
 
 Existen dos tipos de llamadas:
 
-* Con retorno: Al hacer una llamada con retorno se brinda la posibilidad de volver a la
+:::tip Con retorno
+
+Al hacer una llamada con retorno se brinda la posibilidad de volver a la
 página que hizo la llamada. Cuando se hace una llamada de este tipo el usuario
 puede volver a la página anterior al presionar el botón “Anterior” (representado con
 una flecha a la izquierda en el extremo superior izquierdo de la pantalla). Al hacer
@@ -45,12 +48,15 @@ una llamada de este tipo también podemos volver a la página anterior desde có
 invocando a la subrutina “GP: Ir con retorno a &GP_Url”, para que el diseñador genere
 esta subrutina se debe asignar el valor returnable o both al atributo generateCall
 (dentro de web-ui).
+:::
 
-* Sin retorno: Al hacer una llamada sin retorno, la página anterior se pierde y no se
+:::warning Sin retorno 
+Al hacer una llamada sin retorno, la página anterior se pierde y no se
 puede volver a ella con el botón “Anterior”, ni desde código GeneXus. Este tipo de
 llamadas se realizan invocando a la subrutina “GP: Ir sin retorno a &GP_Url”, para
 generar esta subrutina se debe asignar el valor notReturnable o both al atributo
-generateCall (dentro de web-ui). 
+generateCall (dentro de web-ui)
+:::
 
 En la mayoría de los casos se deben utilizar llamadas con retorno, ya que, por lo general
 vamos a necesitar volver a la página anterior. Por ejemplo, si tenemos un “trabajar con” con
@@ -131,11 +137,11 @@ Para controlar si al volver se vuelve a cargar una página utilizamos el atribut
 de las operaciones. Este atributo sirve para indicar si al ejecutar una operación se actualizan
 las grillas de la página. Existen básicamente dos escenarios: 
 
-* La operación no navega a otra página: Este escenario abarca cuando por ejemplo
+* **La operación no navega a otra página**: Este escenario abarca cuando por ejemplo
 dentro de la operación invocamos un procedimiento para borrar un registro de una
 tabla, y luego queremos que se actualice la grilla para reflejar los cambios.
 
-* La operación navega a otra página: Este es el escenario que nos interesa aquí. Se
+* **La operación navega a otra página**: Este es el escenario que nos interesa aquí. Se
 presenta cuando dentro de la operación escribimos código para ir a otra página (por
 ejemplo, en el botón “Agregar” de la página para administrar los países navega a una
 nueva página para ingresar los datos del país). En este escenario se debe asignar
@@ -277,15 +283,16 @@ misma secuencia de WebPanels para agregar un nuevo empleado.
 
 La lista completa de los valores del atributo generateMarkedReturn (dentro de web-ui) es la
 siguiente:
-* ToConcreteMark: Genera la subrutina “GP: Volver a marca &GP_Marca” que permite
+
+* **ToConcreteMark**: Genera la subrutina “GP: Volver a marca &GP_Marca” que permite
 volver a la marca que se asigne en la variable “GP_Marca”
 
-* ToLastMark: Genera la subrutina “GP: Volver a última marca” que permite volver a la
+* **ToLastMark**: Genera la subrutina “GP: Volver a última marca” que permite volver a la
 última página que tenga una marca de navegación.
 
-* Both: Genera ambas subrutinas.
+* **Both**: Genera ambas subrutinas.
 
-* False: No genera ninguna subrutina de navegación a marca.
+* **False**: No genera ninguna subrutina de navegación a marca.
 
 Adicionalmente en las subrutinas para volver a una página con marca se puede utilizar la
 variable GP_NuevaUrl para volver a invocar a la página con otros parámetros. Se aplican las

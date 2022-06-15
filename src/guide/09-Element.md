@@ -1,4 +1,5 @@
 #  Reporte de Errores/Advertencias 
+[[toc]]
 ## Conceptos Básicos
 
 El mecanismo de reporte de errores/advertencias permite mostrarle mensajes al usuario
