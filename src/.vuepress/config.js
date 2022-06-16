@@ -5,7 +5,7 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
   theme: 'yuu',
-  title: 'Descartes v1.0.0',
+  title: 'Descartes',
 
   dest: 'docs',
   base: '/descartes/',
