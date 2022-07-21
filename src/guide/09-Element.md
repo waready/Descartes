@@ -38,7 +38,7 @@ variable GP_Mensaje se debe utilizar el procedimiento FRRepMsg como se muestra e
 ejemplo. El procedimiento recibe primero el texto del mensaje, luego el tipo y devuelve el
 valor que se le debe asignar a la variable GP_Mensaje.
 
-<img :src="$withBase('/img/21.png')" class="center">
+<img :src="$withBase('/img/21-1.png')" class="center">
 
 El mecanismo de reporte de mensajes brinda la capacidad de reportar múltiples mensajes.
 Es decir, en caso de tener la necesidad de reportar mas de un error, se puede invocar varias

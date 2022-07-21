@@ -30,14 +30,13 @@ ejemplo sencillo de una página con una grilla:
 
 ```
 
-<img :src="$withBase('/img/09.png')" class="center">
+<img :src="$withBase('/img/09-1.png')" class="center">
 
 Este ejemplo representa una grilla que muestra la lista de países. Los datos que muestra la
 grilla se determinan a partir de las columnas definidas en el elemento columns. En el código
 se definen dos columnas: una con el atributo PaiCod (código de país) y otra con el atributo
 PaiNom (nombre del país). Al definir la grilla a partir de atributos se genera automáticamente
 el código que carga los datos de la tabla en la grilla, de la misma forma que lo hace GeneXus.
-
 Por lo tanto, con este código ya tenemos todo lo necesario para presentar la lista de países
 registrados en la base de datos.
 
@@ -434,7 +433,10 @@ indicado. El uso de filtros es de mucha utilidad en los prompts ya que le facili
 la tarea de localizar un registro específico. Más adelante se verán con mayor profundidad los
 filtros en grillas.
 
-<img :src="$withBase('/img/10.png')" class="center">
+En el siguiente ejemplo, se muestra un prompt pero de Clientes, no siendo el caso de ejemplo 
+del diseño previene definido en este capítulo
+
+<img :src="$withBase('/img/10-1.png')" class="center">
 
 ## Operaciones 
 
@@ -469,7 +471,7 @@ seleccionar una fila al hacer clic sobre ella. En caso que haya al menos una ope
 selección múltiple, se agrega una columna con casillas de verificación para que el usuario
 pueda marcar más de una fila.
 
-<img :src="$withBase('/img/11.png')" class="center">
+<img :src="$withBase('/img/11-1.png')" class="center">
 
 Los valores posibles del atributo selection son:
 
@@ -507,13 +509,15 @@ directamente a través de las variables asociadas a las columnas. En las columna
 definidas con una variable la selección se carga en la variable, y en las columnas que están
 definidas con atributos el valor seleccionado se asigna a una variable que crea el diseñador
 con nombre GP_A_`<nombre del atributo>`.
+
 Dentro de la operación “Visualizar” del ejemplo anterior se pueden obtener los datos
 seleccionados en las variables GP_A_PaiCod y GP_A_PaiNom.
 
 
 ###  Datos Seleccionados (Selección Simple)
 
-<img :src="$withBase('/img/12.png')" class="center">
+<img :src="$withBase('/img/12-1.png')" class="center">
+
 
 Adicionalmente, al crear la subrutina asociada a las operaciones con selección múltiple el
 diseñador genera un esqueleto del código necesario para iterar sobre las filas chequeadas.
@@ -746,15 +750,14 @@ el filtro con el elemento dependency e indicar manualmente la condición. Cuando
 este elemento retomaremos este caso y mostraremos un ejemplo de cómo implementarlo.
 
 ### Elemento Field 
-Este elemento define un filtro manual que se representa con una caja de texto. Al definir un
-filtro de este tipo se debe indicar la etiqueta del filtro en el atributo caption, una variable para Este elemento define un filtro manual que se representa con una caja de texto. 
+Este elemento define un filtro manual que se representa con una caja de texto. Al definir un 
+filtro de este tipo se debe indicar la etiqueta del filtro en el atributo caption, una variable para 
+almacenar el valor del filtro en el atributo variable y la expresión de filtrado en el elemento 
+hijo filter-condition. 
 
-Al definir un filtro de este tipo se debe indicar la etiqueta del filtro en el atributo caption, una variable para almacenar el valor del filtro en el atributo variable y la expresión de filtrado en el elemento
-hijo filter-condition.
-
-Al describir el elemento column se mostró un ejemplo de una grilla para mostrar los clientes,
-en la cual se podía filtrar por el apellido del cliente. En este caso mostraremos el mismo
-ejemplo pero utilizando el elemento field: 
+Al describir el elemento column se mostró un ejemplo de una grilla para mostrar los clientes, 
+en la cual se podía filtrar por el apellido del cliente. En este caso mostraremos el mismo 
+ejemplo pero utilizando el elemento field:
 
 ``` xml
 <grid name="grdClientes">
@@ -837,6 +840,8 @@ filtro no tiene un valor nulo. Si por alguna circunstancia no queremos que se ag
 valor nulo se puede asignar el valor false al atributo addNullValue (del elemento value-list).
 Sin embargo, se recomienda dejar el valor nulo para que el usuario tenga la posibilidad de
 no aplicar el filtro, sólo se debería quitarlo cuando no se le quiere dar esta opción al usuario. 
+
+### Elemento Dynamic-Value-List
 
 Este elemento permite definir listas de elementos que se obtienen de la base de datos. A
 diferencia del elemento anterior, en este elemento se indica un par de atributos de una tabla
@@ -972,6 +977,8 @@ WebPanel (de clase prompt) que se llame al presionarlo.
 
 * **Image-column**: Permite mostrar imágenes en las celdas de la columna
 
+### Elemento Field-Column 
+
 A través de este elemento se despliega el valor de una variable o atributo (en formato de
 texto) dentro de una columna. La columna puede ser tanto de lectura como de escritura. En
 este último caso se mostrará una caja de texto para ingresar la variable. En definitiva, este
@@ -1094,7 +1101,7 @@ un botón en el lugar de la columna como se muestra en la Figura 5-7. Al presion
 se invoca el WebPanel asociado al prompt. Es importante remarcar que este tipo de columnas
 no tiene datos asociados porque lo único que contienen es un botón por fila.
 
-<img :src="$withBase('/img/14.png')" class="center">
+<img :src="$withBase('/img/14-1.png')" class="center">
 
 En el siguiente ejemplo se muestra cómo definir una columna de este tipo que tiene asociado
 el WebPanel PopCiudades pasando como parámetro el código del país PaiCod, que es parte
@@ -1336,7 +1343,7 @@ derecha de cada nombre se pone un cuadro de selección (value-list-column) para 
 el ejecutivo de cuenta seleccione qué tipo de oferta es la más adecuada para el
 cliente (por ejemplo, préstamo tipo X, Y o Z).
 
-<img :src="$withBase('/img/15.png')" class="center">
+<img :src="$withBase('/img/15-1.png')" class="center">
 
 * Finalmente, luego de seleccionar las promociones asociadas a cada cliente, se
 presionaría el botón “Grabar” para almacenar toda la información. Como se puede

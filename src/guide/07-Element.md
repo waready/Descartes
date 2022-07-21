@@ -13,9 +13,9 @@ usuario tenga que navegar por distintas páginas para ver toda la información q
 Se debe analizar cada caso de forma particular y evaluar cuál es el mejor medio de
 presentación en función de las necesidades del usuario.
 
-En el siguiente ejemplo se muestra una definición con categorías y subcategorías:
+<!-- En el siguiente ejemplo se muestra una definición con categorías y subcategorías: -->
 
-<img :src="$withBase('/img/19.png')" class="center">
+<img :src="$withBase('/img/19-1.png')" class="center">
 
 ``` xml
 <object-definition libraryName="Dlya.Basic" libraryVersion="1.0" designer="WebUI">

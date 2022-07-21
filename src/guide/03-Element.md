@@ -10,7 +10,10 @@ determina que elementos se le van a mostrar al usuario para ingresar o visualiza
 definir el formulario declaramos el elemento form (dentro del elemento web-ui) y dentro de
 este indicamos los elementos que se van a mostrar al visualizar la página Web.
 
-<img :src="$withBase('/img/04.png')" class="center">
+<img :src="$withBase('/img/04-1.png')" class="center"><br>
+
+
+<img :src="$withBase('/img/04-2.png')" class="center">
 
 Los elementos que brinda el diseñador para definir un formulario son:
 
@@ -83,6 +86,7 @@ cuando la variable Mode valga “I”, si queremos ocultar el campo deberíamos 
 valor distinto a la variable. En la sección 10.0 Propiedades dinámicas se profundizará el
 tema, y se enumerarán otras propiedades que pueden controlarse de la misma forma. 
 
+### Prompt asociado a un campo 
 A los campos se les puede asociar un prompt que pueda ayudar al usuario a ingresar un
 campo. Por ejemplo, se podría asociar un prompt a un campo para que el usuario pueda
 desplegar una lista con los valores posibles, o para ayudarlo a calcular un valor.
@@ -463,8 +467,10 @@ código.
 En resumen, para definir una dependencia hay que poner por un lado en el atributo
 determinants las variables donde se va a capturar la clave del objeto, y luego en dependents
 las variables donde se van a cargar los valores que se infieren.
-Luego, al generar la definición, por cada dependencia el diseñador crea una subrutina para
-cargar los valores dependientes en función 
+
+Luego, al generar la definición, por cada dependencia el diseñador crea una subrutina para 
+cargar los valores dependientes en función de los determinantes. Para la dependencia 
+anterior se generaría la siguiente subrutina: 
 
 ``` genexus
 Sub 'GU: Dep -> País (Load)' //$ ...

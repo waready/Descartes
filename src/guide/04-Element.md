@@ -89,6 +89,7 @@ Sin embargo, para darle mayor flexibilidad al esquema también se proporciona el
 refreshGrids, el cual permite indicar de forma explícita que grillas se actualizan (en caso que
 sea más de una se deben separar con comas), por ejemplo, si se necesitan actualizar las
 grillas grdClientes y grdPaises se debe asignar el valor “grdClientes, grdPaises”.
+
 Por defecto no se refrescan las grillas para evitar introducir carga innecesaria en la base de
 datos y mejorar el rendimiento global de la aplicación. Por este motivo, cada vez que sea
 necesario volver a cargar grillas es preciso indicarlo explícitamente.
@@ -132,7 +133,7 @@ accidente. Se recomienda pedir confirmaciones en operaciones para borrar y cualq
 que pueda producir un impacto importante en el sistema y su mal uso pueda provocar daños
 difíciles de reparar
 
-<img :src="$withBase('/img/07.png')" class="center">
+<img :src="$withBase('/img/07-1.png')" class="center">
 
 ## Preconfirmación
 
@@ -180,6 +181,7 @@ ofrece la variable GP_Op_Confirmada para poder conocer si ya se realizó la conf
 no.
 
 La subrutina de preconfirmación sirve principalmente para resolver tres situaciones:
+
 * Hacer validaciones antes de mostrar una confirmación: Por ejemplo, podríamos
 validar los datos que ingresó el usuario y si detectamos que no son correctos
 podríamos mostrarle un error antes de pedir la confirmación. Si se reporta un error

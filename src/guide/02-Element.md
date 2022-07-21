@@ -47,16 +47,16 @@ título, se debe indicar la clase en el atributo class. Este atributo permite da
 adicional al generador de cuál será el uso de la interfaz. Por el momento sólo se soportan
 dos valores aquí:
 
-::: tip *
-Prompt: Se utiliza cuando la página Web se va a utilizar como lista de selección. Por
+::: tip Prompt:
+Se utiliza cuando la página Web se va a utilizar como lista de selección. Por
 ejemplo, si se tiene un campo donde se pide un código de un país, se podría asociar
 una página de tipo prompt que permita desplegar la lista de países. En este caso, la
 página se debería mostrar por encima de la anterior y por eso debe tener asociada la
 clase prompt.
 :::
 
-::: tip *
-Other: Representa una clase genérica que se debe utilizar para todas aquellas
+:::tip Other:
+Representa una clase genérica que se debe utilizar para todas aquellas
 páginas Web que no son prompt.
 :::
 
@@ -71,7 +71,7 @@ encontrar la definición completa):
 </object-definition> 
 
 ```
-<img :src="$withBase('/img/02.png')" class="center">
+<img :src="$withBase('/img/02-1.png')" class="center">
 
 ##  Servicios Expuestos por el Diseñador
 
@@ -191,6 +191,7 @@ atributo object y la lista de parámetros con que se invoca en el atributo param
 se utiliza la variable PaiCod como parámetro, al cerrar el prompt se cargará en dicha variable
 el código seleccionado (en la sección 5.5 Grillas en prompts se explicará cómo lograr devolver
 la selección de una grilla en los parámetros del prompt). 
+
 Al definir los parámetros se pueden utilizar únicamente variables que cumplan una de las
 siguientes condiciones:
 
@@ -247,7 +248,7 @@ aceptar se confirman lo campos y se mandan los valores de las variables de salid
 que llamó al prompt. En caso de presionar el botón cancelar no se mandan los valores de las
 variables de salida.
 
-<img :src="$withBase('/img/03.png')" class="center">
+<img :src="$withBase('/img/03-1.png')" class="center">
 
 A continuación se muestra como podría ser la definición del prompt para calcular las
 comisiones:

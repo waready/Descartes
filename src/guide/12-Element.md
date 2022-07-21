@@ -1,4 +1,4 @@
-# Agregados en la Nueva Versión de Descartes
+# Descartes4.1 –Agregados
 [[toc]]
 ## Pantallas Anchas 
 

@@ -71,6 +71,7 @@ module.exports = {
             '04-Element',
             '05-Element',
             '06-Element',
+            '07-Element',
             '08-Element',
             '09-Element',
             '10-Element',

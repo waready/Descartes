@@ -36,7 +36,7 @@ los clientes y para cada cliente los productos que compró. Si el usuario está 
 productos de un cliente, no se debe brindar una operación “Cerrar” para volver a la página
 anterior, sino que, el usuario debería presionar el botón Volver de la barra superior. 
 
-<img :src="$withBase('/img/23.png')" class="center">
+<img :src="$withBase('/img/23-1.png')" class="center">
 
 ## ¿Devolver el nombre en el prompt de una dependencia?
 
