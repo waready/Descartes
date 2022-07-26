@@ -33,7 +33,7 @@ la siguiente forma:
 Do 'GP: Reportar mensaje' 
 ```
 Antes de invocar a la subrutina “GP: Reportar mensaje” se debe cargar en la variable
-GP_Mensaje el texto del mensaje, y el tipo (“E” error y “W” advertencia). Para cargar la
+GP_Mensaje el texto del mensaje, y el tipo (“E” error y “W” advertencia, "K" confirmación). Para cargar la
 variable GP_Mensaje se debe utilizar el procedimiento FRRepMsg como se muestra en el
 ejemplo. El procedimiento recibe primero el texto del mensaje, luego el tipo y devuelve el
 valor que se le debe asignar a la variable GP_Mensaje.
